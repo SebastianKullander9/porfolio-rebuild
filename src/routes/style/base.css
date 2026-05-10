@@ -1,0 +1,17 @@
+@layer components {
+	.section-x-p {
+		@apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20;
+	}
+
+	.inner-section-p {
+		@apply p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12;
+	}
+
+	.heading-primary {
+		@apply text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+	}
+
+	.heading-secondary {
+		@apply text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
+	}
+}

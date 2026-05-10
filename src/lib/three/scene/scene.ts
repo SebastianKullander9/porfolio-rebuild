@@ -1,7 +1,7 @@
 import * as THREE from "three";
-import { createBackground, updateBackground, resizeBackground } from "./background";
+import { createBackground, updateBackground, resizeBackground } from "../background/background";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { loadModel, updateModel } from "./models/logo";
+import { loadModel, updateModel } from "../models/logo";
 
 let renderer: THREE.WebGLRenderer;
 let scene: THREE.Scene;
@@ -19,12 +19,12 @@ export async function initScene(canvas: HTMLCanvasElement) {
 	renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 	renderer.setSize(window.innerWidth, window.innerHeight);
 
-	controls = new OrbitControls(camera, canvas);
-	controls.enableDamping = true;
-	controls.dampingFactor = 0.05;
+	//controls = new OrbitControls(camera, canvas);
+	//controls.enableDamping = true;
+	//controls.dampingFactor = 0.05;
 
 	createBackground(scene);
-	await loadModel(scene);
+	//await loadModel(scene);
 
 	window.addEventListener("resize", onResize);
 

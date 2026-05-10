@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import vertexShader from "../shaders/background.vert?raw";
-import fragmentShader from "../shaders/background.frag?raw";
+import vertexShader from "../../shaders/background.vert?raw";
+import fragmentShader from "../../shaders/background.frag?raw";
 
 let mesh: THREE.Mesh;
 let material: THREE.ShaderMaterial;

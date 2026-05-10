@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy } from "svelte";
-	import { initScene, destroyScene } from "$lib/three/scene.js";
+	import { initScene, destroyScene } from "$lib/three/scene/scene";
 
 	let canvas: HTMLCanvasElement;
 
@@ -17,5 +17,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		z-index: 0;
 	}
 </style>
