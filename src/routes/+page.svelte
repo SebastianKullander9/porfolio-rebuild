@@ -1,0 +1,21 @@
+<script lang="ts">
+	import { onMount, onDestroy } from "svelte";
+	import { initScene, destroyScene } from "$lib/three/scene.js";
+
+	let canvas: HTMLCanvasElement;
+
+	onMount(() => initScene(canvas));
+	onDestroy(() => destroyScene());
+</script>
+
+<canvas bind:this={canvas}></canvas>
+
+<style>
+	canvas {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
