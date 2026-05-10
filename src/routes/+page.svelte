@@ -4,7 +4,7 @@
 
 	let canvas: HTMLCanvasElement;
 
-	onMount(() => initScene(canvas));
+	onMount(async () => await initScene(canvas));
 	onDestroy(() => destroyScene());
 </script>
 
