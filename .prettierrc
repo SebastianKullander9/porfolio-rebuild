@@ -3,7 +3,10 @@
 	"tabWidth": 4,
 	"singleQuote": false,
 	"trailingComma": "es5",
-	"printWidth": 100,
+	"printWidth": 75,
+    "htmlWhitespaceSensitivity": "ignore",
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "svelteIndentScriptAndStyle": true,
 	"plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
 	"overrides": [
 		{

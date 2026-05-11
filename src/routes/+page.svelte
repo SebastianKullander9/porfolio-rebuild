@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount, onDestroy } from "svelte";
 	import { initScene, destroyScene } from "$lib/three/scene/scene";
+	import Hero from "$lib/components/sections/hero/Hero.svelte";
+	import About from "$lib/components/sections/about/About.svelte";
 
 	let canvas: HTMLCanvasElement;
 
@@ -9,6 +11,8 @@
 </script>
 
 <canvas bind:this={canvas}></canvas>
+<Hero />
+<About />
 
 <style>
 	canvas {
