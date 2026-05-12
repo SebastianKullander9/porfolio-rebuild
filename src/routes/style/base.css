@@ -26,4 +26,24 @@
 	.heading-secondary {
 		@apply text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
 	}
+
+	.text-extrasmall {
+		@apply text-[10px] sm:text-xs md:text-xs lg:text-xs xl:text-xs;
+	}
+
+	.text-small {
+		@apply text-xs sm:text-xs md:text-sm lg:text-sm xl:text-sm;
+	}
+
+	.text-medium {
+		@apply text-sm sm:text-sm md:text-base lg:text-base xl:text-base;
+	}
+
+	.text-large {
+		@apply text-base sm:text-base md:text-lg lg:text-xl xl:text-xl;
+	}
+
+	.text-extralarge {
+		@apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+	}
 }
