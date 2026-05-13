@@ -1,4 +1,8 @@
 @layer components {
+	.section-style {
+		@apply h-screen;
+	}
+
 	.section-x-p {
 		@apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20;
 	}
@@ -81,6 +85,6 @@
 	}
 
 	.primary-button {
-		@apply font-medium text-lg text-white sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
+		@apply text-lg font-medium text-white sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
 	}
 }

@@ -5,7 +5,7 @@
 
 <section
 	style="padding-top: {$headerHeight}px"
-	class="section-x-p relative z-20 h-screen w-full"
+	class="section-x-p h-screen w-full"
 >
 	<div
 		style="height: calc(100vh - {$headerHeight}px)"

@@ -11,8 +11,10 @@
 </script>
 
 <canvas bind:this={canvas}></canvas>
-<Hero />
-<About />
+<div class="relative z-40">
+	<Hero />
+	<About />
+</div>
 
 <style>
 	canvas {
