@@ -19,15 +19,28 @@
 		@apply p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12;
 	}
 
+	p,
+	li,
+	a,
+	input,
+	textarea,
+	select,
+	button {
+		font-family: var(--font-satoshi);
+	}
+
 	.heading-primary {
+		font-family: var(--font-satoshi);
 		@apply text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
 	}
 
 	.heading-secondary {
+		font-family: var(--font-satoshi);
 		@apply text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
 	}
 
 	.text-extrasmall {
+		font-family: var(--font-satoshi);
 		@apply text-[10px] sm:text-xs md:text-xs lg:text-xs xl:text-xs;
 	}
 
@@ -45,5 +58,29 @@
 
 	.text-extralarge {
 		@apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+	}
+
+	.gap-extrasmall {
+		@apply gap-xs sm:gap-xs md:gap-xs lg:gap-sm xl:gap-sm;
+	}
+
+	.gap-small {
+		@apply gap-sm sm:gap-sm md:gap-sm lg:gap-md xl:gap-md;
+	}
+
+	.gap-base {
+		@apply gap-md sm:gap-md md:gap-lg lg:gap-lg xl:gap-xl;
+	}
+
+	.gap-large {
+		@apply gap-lg sm:gap-lg md:gap-xl lg:gap-2xl xl:gap-2xl;
+	}
+
+	.gap-extralarge {
+		@apply gap-2xl sm:gap-2xl md:gap-3xl lg:gap-4xl xl:gap-5xl;
+	}
+
+	.primary-button {
+		@apply font-medium text-lg text-white sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
 	}
 }
