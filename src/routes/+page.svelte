@@ -4,7 +4,6 @@
 	import Hero from "$lib/components/sections/hero/Hero.svelte";
 	import About from "$lib/components/sections/about/About.svelte";
 	import Works from "$lib/components/sections/works/Works.svelte";
-	import TestSection from "$lib/components/sections/testSection/TestSection.svelte";
 
 	let canvas: HTMLCanvasElement;
 
@@ -17,7 +16,6 @@
 	<Hero />
 	<About />
 	<Works />
-	<TestSection />
 </div>
 
 <style>
