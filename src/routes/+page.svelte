@@ -3,6 +3,8 @@
 	import { initScene, destroyScene } from "$lib/three/scene/scene";
 	import Hero from "$lib/components/sections/hero/Hero.svelte";
 	import About from "$lib/components/sections/about/About.svelte";
+	import Works from "$lib/components/sections/works/Works.svelte";
+	import TestSection from "$lib/components/sections/testSection/TestSection.svelte";
 
 	let canvas: HTMLCanvasElement;
 
@@ -14,6 +16,8 @@
 <div class="relative z-40">
 	<Hero />
 	<About />
+	<Works />
+	<TestSection />
 </div>
 
 <style>
