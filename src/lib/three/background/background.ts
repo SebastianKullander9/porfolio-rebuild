@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { planeConfig } from "$lib/config/sceneConfig";
 import vertexShader from "../../shaders/background.vert?raw";
 import fragmentShader from "../../shaders/background.frag?raw";
 
@@ -10,18 +11,26 @@ export function createBackground(scene: THREE.Scene) {
 		vertexShader,
 		fragmentShader,
 		uniforms: {
-			uTime: { value: 0 },
-			uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
-			uSpeed: { value: 0.25 },
-			incline: { value: 0.3 },
-			amplitude: { value: 0.5 },
+			uTime: { value: planeConfig.UNIFORMS.uTime },
+			uResolution: {
+				value: new THREE.Vector2(
+					window.innerWidth,
+					window.innerHeight
+				),
+			},
+			uSpeed: { value: planeConfig.UNIFORMS.uSpeed },
+			incline: { value: planeConfig.UNIFORMS.incline },
+			amplitude: { value: planeConfig.UNIFORMS.amplitude },
 		},
 		depthWrite: false,
 		depthTest: false,
 	});
 
-	const geometry = new THREE.PlaneGeometry(2, 2, 64, 64);
+	const [w, h, segW, segH] = planeConfig.PLANE.geometry;
+	const geometry = new THREE.PlaneGeometry(w, h, segW, segH);
 	mesh = new THREE.Mesh(geometry, material);
+	mesh.position.set(...planeConfig.PLANE.position);
+	mesh.rotation.set(...planeConfig.PLANE.rotation);
 	scene.add(mesh);
 }
 
@@ -30,5 +39,8 @@ export function updateBackground(time: number) {
 }
 
 export function resizeBackground() {
-	material.uniforms.uResolution.value.set(window.innerWidth, window.innerHeight);
+	material.uniforms.uResolution.value.set(
+		window.innerWidth,
+		window.innerHeight
+	);
 }
